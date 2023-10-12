@@ -31,9 +31,7 @@ let rec combinaison n p =
   |p when p = n -> 1
   |p -> combinaison (n-1) (p-1) + combinaison (n-1) p;;
 
-(* combinaison 3 3;;
-combinaison 3 0;;
-combinaison 10 5;; *)
+combinaison 3 2;;
 
 let rec ackerman m n =
   match m with 
