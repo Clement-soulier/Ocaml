@@ -61,8 +61,8 @@ let rec nth i l =
   |v::l when i = 1 -> v
   |v::l -> nth (i-1) l;;
 
-(* nth 1 [1;2;3];;
-nth 45 [1;2;3];; *)
+(* nth 1 [1;2;3];; *)
+nth 2 [1;2;3];;
 
 let rec append l1 l2 = 
   match l1 with 
