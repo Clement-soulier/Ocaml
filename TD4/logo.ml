@@ -17,7 +17,7 @@ let direction logo directionInitial =
 
 let rec diriger programme directionInitial =
   match programme with
-  | [] -> []
+  | [] -> [directionInitial]
   | t::q -> let directionSuivante = direction t directionInitial in directionSuivante::(diriger q directionSuivante);;
 
 let rec simplifie programme = 
